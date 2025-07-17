@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Jerome & Camela Mae's Wedding</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+
+  <!-- AOS CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet"/>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-bs-spy="scroll">
+
+  <!-- 🎵 Background Music -->
+  <audio autoplay loop controls style="position:fixed; top:10px; right:10px; z-index:999;">
+    <source src="music/background.mp3" type="audio/mpeg" />
+    Your browser does not support the audio element.
+  </audio>
+
+  <!-- 💍 Hero -->
+  <section class="hero text-white text-center position-relative">
+    <div class="hero-content container" data-aos="fade-up" data-aos-delay="200">
+      <h1 class="couple-name animate__animated animate__fadeInUp">Jerome & Camela Mae</h1>
+      <h2>SEPTEMBER 6, 2025 • 4:00 PM</h2>
+
+      <div id="timer" class="countdown-timer mt-4 d-flex justify-content-center flex-wrap gap-3">
+        <div class="time-box">
+          <span class="time" id="days">00</span>
+          <small>Days</small>
+        </div>
+        <div class="colon">:</div>
+        <div class="time-box">
+          <span class="time" id="hours">00</span>
+          <small>Hours</small>
+        </div>
+        <div class="colon">:</div>
+        <div class="time-box">
+          <span class="time" id="minutes">00</span>
+          <small>Minutes</small>
+        </div>
+        <div class="colon">:</div>
+        <div class="time-box">
+          <span class="time" id="seconds">00</span>
+          <small>Seconds</small>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- 🎉 Event Details -->
+  <!-- <section class="py-5 bg-light text-center" data-aos="fade-up">
+    <div class="container">
+      <h2>You're Invited</h2>
+      <p class="mb-4">Join us as we say “I do”</p>
+      <ul class="list-unstyled">
+        <li><strong>Ceremony:</strong> 3:00 PM | St. Francis Church</li>
+        <li><strong>Reception:</strong> 5:00 PM | Emerald Grand Hall</li>
+        <li><strong>Attire:</strong> Formal - Emerald Green Motif</li>
+      </ul>
+    </div>
+  </section> -->
+
+  <!-- 📸 Photo Gallery -->
+  <section class="py-5 bg-light" data-aos="fade-up">
+    <div class="container">
+      <h1 class="text-center" style="font-family: 'Dancing Script', cursive; color: #23352f;">Prenup Photos</h1>
+      <div class="slideshow-container">
+      <div class="slide fade">
+        <img src="./assets/DSC06535.JPG" class="slide-image" alt="Photo 1">
+      </div>
+      <div class="slide fade">
+        <img src="./assets/DSC06585.JPG" class="slide-image" alt="Photo 2">
+      </div>
+      <div class="slide fade">
+        <img src="./assets/DSC06599.JPG" class="slide-image" alt="Photo 3">
+      </div>
+      <div class="slide fade">
+        <img src="./assets/DSC06616.JPG" class="slide-image" alt="Photo 3">
+      </div>
+      <div class="slide fade">
+        <img src="./assets/DSC06670.JPG" class="slide-image" alt="Photo 3">
+      </div>
+      <div class="slide fade">
+        <img src="./assets/DSC06694.JPG" class="slide-image" alt="Photo 3">
+      </div>
+      <div class="slide fade">
+        <img src="./assets/DSC06709.JPG" class="slide-image" alt="Photo 3">
+      </div>
+      <div class="slide fade">
+        <img src="./assets/DSC06737.JPG" class="slide-image" alt="Photo 3">
+      </div>
+      <div class="slide fade">
+        <img src="./assets/DSC06770.JPG" class="slide-image" alt="Photo 3">
+      </div>
+      <div class="slide fade">
+        <img src="./assets/DSC06812.JPG" class="slide-image" alt="Photo 3">
+      </div>
+      <div class="slide fade">
+        <img src="./assets/DSC06816.JPG" class="slide-image" alt="Photo 3">
+      </div>
+      <div class="slide fade">
+        <img src="./assets/DSC06827.JPG" class="slide-image" alt="Photo 3">
+      </div>
+      <div class="slide fade">
+        <img src="./assets/DSC06856.JPG" class="slide-image" alt="Photo 3">
+      </div>
+      <div class="slide fade">
+        <img src="./assets/DSC06858.JPG" class="slide-image" alt="Photo 3">
+      </div>
+      <div class="slide fade">
+        <img src="./assets/DSC06862.JPG" class="slide-image" alt="Photo 3">
+      </div>
+      <div class="slide fade">
+        <img src="./assets/DSC06924.JPG" class="slide-image" alt="Photo 3">
+      </div>
+      <div class="slide fade">
+        <img src="./assets/DSC06936.JPG" class="slide-image" alt="Photo 3">
+      </div>
+      <div class="slide fade">
+        <img src="./assets/DSC06939.JPG" class="slide-image" alt="Photo 3">
+      </div>
+      <div class="slide fade">
+        <img src="./assets/DSC07005.JPG" class="slide-image" alt="Photo 3">
+      </div>
+      <div class="slide fade">
+        <img src="./assets/DSC07033.JPG" class="slide-image" alt="Photo 3">
+      </div>
+      <div class="slide fade">
+        <img src="./assets/DSC07047.JPG" class="slide-image" alt="Photo 3">
+      </div>
+      <div class="slide fade">
+        <img src="./assets/DSC07052.JPG" class="slide-image" alt="Photo 3">
+      </div>
+      <div class="slide fade">
+        <img src="./assets/DSC07053.JPG" class="slide-image" alt="Photo 3">
+      </div>
+      <div class="slide fade">
+        <img src="./assets/DSC07074.JPG" class="slide-image" alt="Photo 3">
+      </div>
+      <div class="slide fade">
+        <img src="./assets/DSC07078.JPG" class="slide-image" alt="Photo 3">
+      </div>
+      <div class="slide fade">
+        <img src="./assets/DSC07105.JPG" class="slide-image" alt="Photo 3">
+      </div>
+      <div class="slide fade">
+        <img src="./assets/DSC07158.JPG" class="slide-image" alt="Photo 3">
+      </div>
+      <div class="slide fade">
+        <img src="./assets/DSC07179.JPG" class="slide-image" alt="Photo 3">
+      </div>
+      <div class="slide fade">
+        <img src="./assets/DSC07211.JPG" class="slide-image" alt="Photo 3">
+      </div>
+      <div class="slide fade">
+        <img src="./assets/DSC07212.JPG" class="slide-image" alt="Photo 3">
+      </div>
+      <div class="slide fade">
+        <img src="./assets/DSC07224.JPG" class="slide-image" alt="Photo 3">
+      </div>
+      <div class="slide fade">
+        <img src="./assets/DSC07229.JPG" class="slide-image" alt="Photo 3">
+      </div>
+      <div class="slide fade">
+        <img src="./assets/DSC07233.JPG" class="slide-image" alt="Photo 3">
+      </div>
+      <div class="slide fade">
+        <img src="./assets/DSC07237.JPG" class="slide-image" alt="Photo 3">
+      </div>
+      <div class="slide fade">
+        <img src="./assets/DSC07242.JPG" class="slide-image" alt="Photo 3">
+      </div>
+      <div class="slide fade">
+        <img src="./assets/DSC07248.JPG" class="slide-image" alt="Photo 3">
+      </div>
+      <div class="slide fade">
+        <img src="./assets/DSC07251.JPG" class="slide-image" alt="Photo 3">
+      </div>
+      <div class="slide fade">
+        <img src="./assets/DSC07254.JPG" class="slide-image" alt="Photo 3">
+      </div>
+      <div class="slide fade">
+        <img src="./assets/DSC07260.JPG" class="slide-image" alt="Photo 3">
+      </div>
+      <div class="slide fade">
+        <img src="./assets/DSC07278.JPG" class="slide-image" alt="Photo 3">
+      </div>
+      <div class="slide fade">
+        <img src="./assets/DSC07285.JPG" class="slide-image" alt="Photo 3">
+      </div>
+      <div class="slide fade">
+        <img src="./assets/DSC07296.JPG" class="slide-image" alt="Photo 3">
+      </div>
+      <div class="slide fade">
+        <img src="./assets/DSC07340.JPG" class="slide-image" alt="Photo 3">
+      </div>
+      <div class="slide fade">
+        <img src="./assets/DSC07354.JPG" class="slide-image" alt="Photo 3">
+      </div>
+      <div class="slide fade">
+        <img src="./assets/DSC07364.JPG" class="slide-image" alt="Photo 3">
+      </div>
+      <div class="slide fade">
+        <img src="./assets/DSC07369.JPG" class="slide-image" alt="Photo 3">
+      </div>
+      <div class="slide fade">
+        <img src="./assets/DSC07371.JPG" class="slide-image" alt="Photo 3">
+      </div>
+      <div class="slide fade">
+        <img src="./assets/DSC07373.JPG" class="slide-image" alt="Photo 3">
+      </div>
+      <div class="slide fade">
+        <img src="./assets/DSC07376.JPG" class="slide-image" alt="Photo 3">
+      </div>
+      <div class="slide fade">
+        <img src="./assets/DSC07385.JPG" class="slide-image" alt="Photo 3">
+      </div>
+  </div>
+    </div>
+    
+    <!-- <div class="container text-center">
+      <h2 class="mb-4">Our Journey</h2>
+      <div class="row g-3 justify-content-center">
+        <div class="col-6 col-md-4">
+          <img src="assets/gallery1.jpg" class="img-fluid rounded shadow-sm" alt="Gallery 1">
+        </div>
+        <div class="col-6 col-md-4">
+          <img src="assets/gallery2.jpg" class="img-fluid rounded shadow-sm" alt="Gallery 2">
+        </div>
+        <div class="col-6 col-md-4">
+          <img src="assets/gallery3.jpg" class="img-fluid rounded shadow-sm" alt="Gallery 3">
+        </div>
+      </div>
+    </div> -->
+  </section>
+
+  <!-- 🗺️ Google Map -->
+  <!-- <section class="py-5 text-center" data-aos="fade-up">
+    <div class="container">
+      <h2>Wedding Venue</h2>
+      <div class="ratio ratio-16x9 mt-3">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3869.882551627494!2d120.87932407596118!3d14.084109786343356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33bd77665c88409b%3A0xc7f534fa043cbfcc!2sMaharlika%20Events%20Tagaytay!5e0!3m2!1sen!2sph!4v1752736307969!5m2!1sen!2sph" 
+            style="border:0;" allowfullscreen loading="lazy">
+        </iframe>
+      </div>
+    </div>
+  </section> -->
+  <section id="venue" class="text-center my-5">
+    <h1 class="mb-4 text-white" style="font-family: 'Dancing Script', cursive;"> Ceremony and Reception</h1>
+    <div class="container">
+      <div class="card mx-auto shadow" style="width: 95%; border-radius: 16px; overflow: hidden;">
+        <img src="./assets/venue.jpg.jpg" class="card-img-top" alt="Wedding Venue" style="object-fit: cover;">
+        <div class="card-body bg-light">
+          <h2 class="card-title" style="font-family: 'Dancing Script', cursive;">Maharlika Events Tagaytay</h2>
+          <!-- <p class="card-text">123 Example Street, Tagaytay City, Philippines</p> -->
+          <a href="https://maps.app.goo.gl/BYP6Sp9WAncqkM2L8" 
+            class="btn btn-success" target="_blank" style="font-weight: 600;">
+            📍 View Map
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 💌 RSVP -->
+  <!-- <section class="py-5 text-center bg-success text-white" data-aos="zoom-in">
+    <div class="container">
+      <h2>RSVP</h2>
+      <p>Please confirm your attendance by September 6, 2025</p>
+      <a href="https://forms.gle/YOUR_FORM_LINK" target="_blank" class="btn btn-light btn-lg mt-2">RSVP Now</a>
+    </div>
+  </section> -->
+
+  <!-- 💖 Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    <p>With love, Jerome & Camela Mae</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- AOS JS -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+  <script>
+    AOS.init();
+  </script>
+  <script src="script.js"></script>
+  <script>
+  let slideIndex = 0;
+  showSlides();
+
+  function showSlides() {
+    const slides = document.getElementsByClassName("slide");
+    for (let i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) { slideIndex = 1; }
+    slides[slideIndex - 1].style.display = "block";
+    setTimeout(showSlides, 1000); // Change every 3 seconds
+  }
+</script>
+</body>
+</html>
