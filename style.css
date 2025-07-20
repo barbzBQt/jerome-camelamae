@@ -225,3 +225,49 @@ body {
     margin: 0 0.25rem;
   }
 }
+
+.rsvp-section {
+  background: transparent; /* dark emerald green */
+  padding: 6rem 1rem;
+}
+
+.rsvp-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 1rem;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+  max-width: 500px;
+}
+
+.btn-rsvp {
+  background: linear-gradient(to right, #FFD700, #FFA500); /* soft gold gradient */
+  color: #000;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.btn-rsvp:hover {
+  background: linear-gradient(to right, #FFC107, #FF9800);
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(255, 215, 0, 0.5);
+}
+
+.invitation-section img {
+  transition: transform 0.3s ease, z-index 0.3s ease;
+  position: relative;
+  z-index: 1;
+}
+
+.invitation-section img:hover {
+  transform: scale(1.5);
+  z-index: 9999; /* ensures it's above everything */
+}
+@media (max-width: 576px) {
+  .invitation-section h2 {
+    font-size: 1.75rem;
+  }
+  .invitation-section p {
+    font-size: 1rem;
+  }
+}
