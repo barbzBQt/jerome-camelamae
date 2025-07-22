@@ -328,7 +328,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  animation: splashFadeOut 2s ease-in-out 4s forwards; /* 4s delay */
+  animation: splashFadeOut s ease-in-out 4s forwards; /* 4s delay */
 }
 
 .splash-content {
