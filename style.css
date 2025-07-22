@@ -5,21 +5,14 @@ body {
 }
 
 .hero {
-  background: url('assets/DSC07354.JPG') no-repeat center;
+  background: url('assets/DSC07354.JPG');
   background-size: cover;
-  background-position: center bottom; /* ✅ CROPS FROM TOP */
+  background-position: center bottom;
   height: 100vh;
   display: flex;
   align-items: flex-end;
   justify-content: center;
   padding-bottom: 4rem;
-}
-
-.hero::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-color: rgba(0, 0, 0, 0.5); /* dark overlay for text contrast */
 }
 
 .hero-content {
@@ -188,44 +181,6 @@ body {
   to { opacity: 1 }
 }
 
-
-@media (max-width: 576px) {
-  .hero h1.couple-name {
-    font-size: 2.2rem;
-  }
-
-  .hero h2 {
-    font-size: 1.1rem;
-  }
-
-   .countdown-timer {
-    display: flex;
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    gap: 0.5rem;
-    padding: 0 1rem;
-  }
-
-  .time-box {
-    min-width: 60px;
-    padding: 0.75rem;
-    flex-shrink: 0;
-  }
-
-  .time-box .time {
-    font-size: 1.8rem;
-  }
-
-  .time-box small {
-    font-size: 0.7rem;
-  }
-
-  .colon {
-    font-size: 2rem;
-    margin: 0 0.25rem;
-  }
-}
-
 .rsvp-section {
   background: transparent; /* dark emerald green */
   padding: 6rem 1rem;
@@ -254,20 +209,108 @@ body {
 }
 
 .invitation-section img {
-  transition: transform 0.3s ease, z-index 0.3s ease;
+  width: 100%;           /* responsive width                        */
+  height: auto;          /* keep natural aspect ratio               */
+  object-fit: cover;     /* crop if the column is taller than wide  */
+  transition: transform .3s ease, z-index .3s ease;
   position: relative;
   z-index: 1;
 }
 
+/* hover zoom stays, but 1.5 × is plenty */
 .invitation-section img:hover {
-  transform: scale(1.5);
-  z-index: 9999; /* ensures it's above everything */
+  transform: scale(1.15);   /* big enough to pop, small enough to stay sharp   */
+  z-index: 9999;
 }
+
+.faqs-section img {
+  width: 100%;           /* responsive width                        */
+  height: auto;          /* keep natural aspect ratio               */
+  object-fit: cover;     /* crop if the column is taller than wide  */
+  transition: transform .3s ease, z-index .3s ease;
+  position: relative;
+  z-index: 1;
+}
+
+/* hover zoom stays, but 1.5 × is plenty */
+.faqs-section img:hover {
+  transform: scale(1.15);   /* big enough to pop, small enough to stay sharp   */
+  z-index: 9999;
+}
+
 @media (max-width: 576px) {
   .invitation-section h2 {
     font-size: 1.75rem;
   }
   .invitation-section p {
     font-size: 1rem;
+  }
+  .invitation-section img:hover {
+    transform: scale(1.15);
+    z-index: 9999; /* ensures it's above everything */
+  }
+
+  .faqs-section h2 {
+    font-size: 1.75rem;
+  }
+  .faqs-section p {
+    font-size: 1rem;
+  }
+  .faqs-section img:hover {
+    transform: scale(1.15);
+    z-index: 9999; /* ensures it's above everything */
+  }
+
+  .hero {
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center top;
+    height: 100%;
+    padding-top: 50%;
+    margin-bottom: -5%;
+  }
+
+  .hero h1.couple-name {
+    font-size: 2.2rem;
+  }
+
+  .hero h2 {
+    font-size: 1.1rem;
+  }
+
+  .countdown-timer {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 0.5rem;
+    padding: 0 1rem;
+  }
+
+  .time-box {
+    min-width: 60px;
+    padding: 0.75rem;
+    flex-shrink: 0;
+  }
+
+  .time-box .time {
+    font-size: 1.8rem;
+  }
+
+  .time-box small {
+    font-size: 0.7rem;
+  }
+
+  .colon {
+    font-size: 2rem;
+    margin: 0 0.25rem;
+  }
+
+  .invitation-section img:hover {
+    transform: scale(1.1);
+    z-index: 9999; /* ensures it's above everything */
+  }
+  .faqs-section img:hover {
+    transform: scale(1.2);
+    z-index: 9999; /* ensures it's above everything */
   }
 }
