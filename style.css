@@ -173,7 +173,7 @@ body {
 /* Optional fade effect */
 .fade {
   animation-name: fade;
-  animation-duration: 1s;
+  animation-duration: 3s;
 }
 
 @keyframes fade {
