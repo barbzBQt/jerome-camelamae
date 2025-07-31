@@ -223,7 +223,9 @@ body {
   z-index: 9999;
 }
 
-.faqs-section img {
+.faqs-section img, 
+.timeline-section img,
+.reminder-section img {
   width: 100%;           /* responsive width                        */
   height: auto;          /* keep natural aspect ratio               */
   object-fit: cover;     /* crop if the column is taller than wide  */
@@ -233,7 +235,9 @@ body {
 }
 
 /* hover zoom stays, but 1.5 × is plenty */
-.faqs-section img:hover {
+.faqs-section img:hover,
+.timeline-section img:hover,
+.reminder-section img:hover {
   transform: scale(1.15);   /* big enough to pop, small enough to stay sharp   */
   z-index: 9999;
 }
